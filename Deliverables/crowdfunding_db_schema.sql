@@ -8,14 +8,16 @@ CREATE TABLE "campaign" (
     "contact_id" INTEGER   NOT NULL,
     "company_name" VARCHAR(200)   NOT NULL,
     "description" VARCHAR(200)   NOT NULL,
-    "goal" INTEGER   NOT NULL,
-    "pledged" INTEGER   NOT NULL,
+    "goal" FLOAT   NOT NULL,
+    "pledged" FLOAT   NOT NULL,
     "outcome" VARCHAR(50)   NOT NULL,
     "backers_count" INTEGER(20)   NOT NULL,
     "country" VARCHAR(10)   NOT NULL,
     "currency" VARCHAR(10)   NOT NULL,
     "launched_date" DATE   NOT NULL,
     "end_date" DATE   NOT NULL,
+    "staff_pick" BOOLEAN   NOT NULL,
+    "spotlight" BOOLEAN   NOT NULL,
     "category_id" VARCAHR(10)   NOT NULL,
     "subcategory_id" VARCHAR(10)   NOT NULL
 );
