@@ -2,17 +2,17 @@
 campaign
 -
 cf_id INTEGER
-contact_id SERIAL PK FK >- contacts.contact_id
+contact_id SERIAL FK >- contacts.contact_id
 company_name VARCHAR(200)
 description VARCHAR(200)
 goal INTEGER
 pledged INTEGER
 outcome VARCHAR(50)
-backers_count INT(20)
+backers_count INTEGER(20)
 country VARCHAR(10)
 currency VARCHAR(10)
-launched_date DATE(20)
-end_date DATE(20)
+launched_date DATE
+end_date DATE
 category_id VARCAHR(10)
 subcategory_id VARCHAR(10)
 
